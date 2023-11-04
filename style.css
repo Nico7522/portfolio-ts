@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #f1f1f1;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+body {
+    font-family: "Poppins";
+    background-color: black;
+}
+
+header {
+    height: 10vh;
+    border-bottom: solid yellow 1px;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    /* height: 110px; */
+    box-sizing: border-box;
+   
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li:active a {
+    color: red;
+    font-weight: 600;
+}
+
+.navbar .menu-h {
+    display: none;
+    position: absolute;
+    width: 35px;
+    right: 50px;
+    top: 50px;
+}
+
+h2 {
+   
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about-me {
+    /* max-width: 1500px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: #f7b733 1px solid;
+    width: 100%;
+}
+.total-description {
+    display: flex;
+    justify-content: space-between;    
+    width: 100%;
+    max-width: 1500px;
+
+}
+
+.title {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title > h3 {
+    font-size: 4rem;
+}
+
+.description {
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.resume {
+    margin-top: 50px;
+    width: 500px;
+    height: 350px;
+}
+
+.resume > p {
+    
+    font-size: 1.5em !important;
+}
+
+.js-logo {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.content {
+    width: 100%;
+    
+}
+
+.content h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    padding: 0.5em 0;
+}
+
+.content p {
+    font-family: Raleway, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #f1f1f1;
+}
+
+.slide-in {
+    max-width: 900px;
+    margin: 50px auto;
+    height: 250px;
+    background: linear-gradient(to right, rgb(175, 53, 19), #f7b733); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out,
+    opacity 0.6s ease-in-out;
+    border-radius: 2%;
+}
+.slide-in.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.slide-in h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.slide-in label {
+    display: block;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+.send-mail {
+    margin: 20px auto 10px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.slide-in a {
+    width: 125px;
+    padding: 15px 12px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(81, 81, 211);
+    color: #f1f1f1;
+    border: none;
+    text-transform: uppercase;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .nav-links {
+        top: 0;
+        position: absolute;
+        background-color: rgb(136, 112, 112, 0.299);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+      
+      
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .navbar .menu-h {
+        display: block;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
