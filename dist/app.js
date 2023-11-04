@@ -5,10 +5,10 @@ const SlidingNewsLetter = document.querySelector('.slide-in');
 window.addEventListener('scroll', () => {
     const { scrollTop, clientHeight } = document.documentElement;
     // console.log(scrollTop, clientHeight);
-    const fromTopElmentTotopViewport = SlidingNewsLetter === null || SlidingNewsLetter === void 0 ? void 0 : SlidingNewsLetter.getBoundingClientRect().top;
-    if (fromTopElmentTotopViewport) {
-        const scrollTopAndFromTopElmentTotopViewport = Number((scrollTop + fromTopElmentTotopViewport).toFixed());
-        if (scrollTop > scrollTopAndFromTopElmentTotopViewport - clientHeight * 0.50) {
+    const fromTopElementTotopViewport = SlidingNewsLetter === null || SlidingNewsLetter === void 0 ? void 0 : SlidingNewsLetter.getBoundingClientRect().top;
+    if (fromTopElementTotopViewport) {
+        const scrollTopAndFromTopElmentTotopViewport = Number((scrollTop + fromTopElementTotopViewport).toFixed());
+        if (scrollTop > scrollTopAndFromTopElmentTotopViewport - (clientHeight * 0.90)) {
             SlidingNewsLetter === null || SlidingNewsLetter === void 0 ? void 0 : SlidingNewsLetter.classList.add('active');
         }
     }

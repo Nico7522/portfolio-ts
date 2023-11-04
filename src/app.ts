@@ -6,10 +6,10 @@ window.addEventListener('scroll', () => {
     const { scrollTop, clientHeight } = document.documentElement;
     // console.log(scrollTop, clientHeight);
 
-    const fromTopElmentTotopViewport = SlidingNewsLetter?.getBoundingClientRect().top;
-    if (fromTopElmentTotopViewport) {
-        const scrollTopAndFromTopElmentTotopViewport: number = Number((scrollTop + fromTopElmentTotopViewport).toFixed());
-        if (scrollTop > scrollTopAndFromTopElmentTotopViewport - clientHeight* 0.50) {
+    const fromTopElementTotopViewport = SlidingNewsLetter?.getBoundingClientRect().top;
+    if (fromTopElementTotopViewport) {
+        const scrollTopAndFromTopElmentTotopViewport: number = Number((scrollTop + fromTopElementTotopViewport).toFixed());
+        if (scrollTop > scrollTopAndFromTopElmentTotopViewport - (clientHeight* 0.90)) {
             SlidingNewsLetter?.classList.add('active')
         }
     }
