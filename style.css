@@ -14,12 +14,14 @@
 
 html {
     scroll-behavior: smooth;
+    background-image: url("./images/background.jpg");
+    background-size: contain; 
   }
 
 
 body {
     font-family: "Poppins";
-    background-color: black;
+   
 }
 
 header {
@@ -76,7 +78,7 @@ header {
 h2 {
    
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .about-me {
@@ -103,8 +105,9 @@ h2 {
     align-items: center;
 }
 
-.title > h3 {
+ h3 {
     font-size: 4rem;
+    text-align: center;
 }
 
 .description {
@@ -127,6 +130,27 @@ h2 {
 .js-logo {
     width: 200px;
     margin-right: 10px;
+}
+
+.utils-link {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-logo {
+    width: 70px;
+
+}
+
+.linkedin-logo {
+    width: 77px;
+}
+
+.history {
+    max-width: 900px;
+    margin: auto;
 }
 
 .content {
@@ -198,6 +222,34 @@ h2 {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+#animated-link {
+    --font-size: 1rem;
+    font-size: var(--font-size);
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+  }
+  #animated-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: calc(var(--font-size) * 2);
+    height: calc(var(--font-size) * 2);
+    border-radius: calc(var(--font-size));
+    background-color: rgb(235, 201, 53);
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    transition: width 0.6s cubic-bezier(.8,0,.24,.99);
+  }
+  
+  #animated-link:hover::before {
+    width: calc(100% + 30%); 
+    /* + 2x le décaalge*/
+  }
+  
 
 
 @media screen and (max-width: 900px) {

@@ -5,6 +5,7 @@ const SlidingNewsLetter = document.querySelector('.slide-in');
 window.addEventListener('scroll', () => {
     const { scrollTop, clientHeight } = document.documentElement;
     // console.log(scrollTop, clientHeight);
+    console.log(scrollTop, SlidingNewsLetter === null || SlidingNewsLetter === void 0 ? void 0 : SlidingNewsLetter.getBoundingClientRect().top);
     const fromTopElementTotopViewport = SlidingNewsLetter === null || SlidingNewsLetter === void 0 ? void 0 : SlidingNewsLetter.getBoundingClientRect().top;
     if (fromTopElementTotopViewport) {
         const scrollTopAndFromTopElmentTotopViewport = Number((scrollTop + fromTopElementTotopViewport).toFixed());
