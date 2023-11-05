@@ -1,11 +1,7 @@
 {
-    "compilerOptions": {
-        "outDir": "dist",
-        "target": "ES6",
-        "strict": true,
-        
-    },
-    "files": [
-        "src/app.ts"
-    ]
+  "compilerOptions": {
+    "outDir": "dist",
+    "strict": true,
+  },
+  "files": ["src/app.ts"]
 }
