@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/aos": "^3.0.6",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

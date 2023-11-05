@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Document</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
     </header>
     <div class="content">
         <div id="about-me" class="about-me">
-            <h2>Présentation 🧾</h2>
+            <h2 data-aos="fade-right">Présentation 🧾</h2>
             <div class="total-description">
                 <div class="description">
                     <div class="title">
@@ -65,10 +67,10 @@
             </div>
         </div>
 
-        <div id="history" class="history">
-            <h2 class="">Mon histoire dans les grandes lignes 📝</h2>
+        <div  id="history" class="history">
+            <h2 data-aos="fade-right"  data-aos-once='true'>Mon histoire dans les grandes lignes 📝</h2>
 
-            <h3>Le commencement</h3>
+            <h3 >Le commencement</h3>
             <p>Depuis tout petit, je suis passionné par l'informatique. J'ai eu mon premier ordinateur à l'âge de 12 ans. C'est là où j'ai commencé à m'intérésser
                 à comment était fait un ordinateur, comment les programmes fonctionnaient ... Je regardai comment changer telle ou telle pièce, je m'intéréssais aux codes
                 sources des programmes et sites web, qui, même s'en rien y comprendre, me passionnaient.
@@ -98,12 +100,10 @@
    
     </div>
 
- 
-
-    
-        
-  
-    
-    <script src="dist/app.js"></script>
+    <script type="module" src="dist/app.js" ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
