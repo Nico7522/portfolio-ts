@@ -2,6 +2,8 @@
 const menuHamburger = document.querySelector(".menu-h");
 const navLinks = document.querySelector(".nav-links");
 const SlidingNewsLetter = document.querySelector('.slide-in');
+const linkedinLogo = document.querySelector('.linkedin-logo');
+const githubLogo = document.querySelector('.github-logo');
 window.addEventListener('scroll', () => {
     const { scrollTop, clientHeight } = document.documentElement;
     // console.log(scrollTop, clientHeight);
@@ -17,4 +19,13 @@ window.addEventListener('scroll', () => {
 menuHamburger === null || menuHamburger === void 0 ? void 0 : menuHamburger.addEventListener('click', () => {
     navLinks === null || navLinks === void 0 ? void 0 : navLinks.classList.toggle('mobile-menu');
 });
-console.log("coucou");
+linkedinLogo === null || linkedinLogo === void 0 ? void 0 : linkedinLogo.addEventListener('mouseover', () => {
+    if (githubLogo) {
+        githubLogo.style.width = '50px';
+    }
+});
+linkedinLogo === null || linkedinLogo === void 0 ? void 0 : linkedinLogo.addEventListener('mouseleave', () => {
+    if (githubLogo) {
+        githubLogo.style.width = '';
+    }
+});

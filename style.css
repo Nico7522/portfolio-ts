@@ -126,33 +126,61 @@ h2 {
 
 .resume > p {
     
-    font-size: 1.5em !important;
+    font-size: 1.2em !important;
+}
+
+#resume-p:nth-child(1) {
+    margin-top: -15px;
+}
+#resume-p {
+    margin-top: 10px;
 }
 
 .js-logo {
     width: 200px;
     margin-right: 10px;
+
 }
 
 .utils-link {
-    margin-top: 70px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .github-logo {
-    width: 70px;
+    width: 60px;
+    transition: ease width 0.5s;
 
+}
+.github-logo:hover {
+    width: 80px;
 }
 
 .linkedin-logo {
     width: 77px;
+    transition: ease width 0.5s;
+
+}
+.linkedin-logo:hover {
+    width: 90px;
 }
 
 .history {
     max-width: 900px;
     margin: auto;
+}
+
+.history > h3 {
+    border-bottom: #f7b733 1px solid;
+    width: 80%;
+    margin: auto;
+}
+
+.history > p {
+    text-align: center;
+    margin-top: 10px;
 }
 
 .content {

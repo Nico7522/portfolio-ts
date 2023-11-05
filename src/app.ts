@@ -1,6 +1,8 @@
 const menuHamburger = document.querySelector(".menu-h");
 const navLinks = document.querySelector(".nav-links");
 const SlidingNewsLetter = document.querySelector('.slide-in');
+const linkedinLogo = document.querySelector('.linkedin-logo');
+const githubLogo = document.querySelector('.github-logo');
 
 window.addEventListener('scroll', () => {
     const { scrollTop, clientHeight } = document.documentElement;
@@ -19,4 +21,18 @@ console.log(scrollTop, SlidingNewsLetter?.getBoundingClientRect().top);
 menuHamburger?.addEventListener('click', () => {
     navLinks?.classList.toggle('mobile-menu')
 });
-console.log("coucou");
+
+
+linkedinLogo?.addEventListener('mouseover', () => {
+    if (githubLogo) {
+        (githubLogo as HTMLElement).style.width = '50px'; 
+    }
+    
+})
+
+linkedinLogo?.addEventListener('mouseleave', () => {
+    if (githubLogo) {
+        (githubLogo as HTMLElement).style.width = ''; 
+    }
+    
+})
