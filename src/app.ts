@@ -7,16 +7,39 @@ const navLinks = document.querySelector(".nav-links");
 const SlidingNewsLetter = document.querySelector('.slide-in');
 const linkedinLogo = document.querySelector('.linkedin-logo');
 const githubLogo = document.querySelector('.github-logo');
+const paratest = document.querySelectorAll('.div-test > p');
+
+
+// Méthode pour afficher le texte au scroll
+window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+  let fromTopElementToTopViewport : number;
+    paratest?.forEach(p => {
+      fromTopElementToTopViewport = p.getBoundingClientRect().top
+      if (fromTopElementToTopViewport) {
+        const scrollTopAndFromTopElmentTotopViewport: number = Number(
+          (scrollTop + fromTopElementToTopViewport).toFixed()
+        );
+        if (
+          scrollTop >
+          scrollTopAndFromTopElmentTotopViewport - clientHeight * 0.9
+        ) {
+          (p as HTMLElement).style.opacity = "1";
+        }
+      }
+    })
+
+})
 
 window.addEventListener("scroll", () => {
   const { scrollTop, clientHeight } = document.documentElement;
 
 
-  const fromTopElementTotopViewport =
+  const fromTopElementToTopViewport =
     SlidingNewsLetter?.getBoundingClientRect().top;
-  if (fromTopElementTotopViewport) {
+  if (fromTopElementToTopViewport) {
     const scrollTopAndFromTopElmentTotopViewport: number = Number(
-      (scrollTop + fromTopElementTotopViewport).toFixed()
+      (scrollTop + fromTopElementToTopViewport).toFixed()
     );
     if (
       scrollTop >
