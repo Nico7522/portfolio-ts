@@ -324,17 +324,4 @@ h2 {
 }
 
 
-.div-test {
 
-    border: 1px solid yellow;
-    width: 50%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.div-test > p {
-    
-    opacity: 0;
-    transition: opacity ease 1s;
-
-}

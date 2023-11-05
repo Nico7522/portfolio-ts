@@ -9,20 +9,24 @@ var linkedinLogo = document.querySelector('.linkedin-logo');
 var githubLogo = document.querySelector('.github-logo');
 var paratest = document.querySelectorAll('.div-test > p');
 // Méthode pour afficher le texte au scroll
-window.addEventListener('scroll', function () {
-    var _a = document.documentElement, scrollTop = _a.scrollTop, clientHeight = _a.clientHeight;
-    var fromTopElementToTopViewport;
-    paratest === null || paratest === void 0 ? void 0 : paratest.forEach(function (p) {
-        fromTopElementToTopViewport = p.getBoundingClientRect().top;
-        if (fromTopElementToTopViewport) {
-            var scrollTopAndFromTopElmentTotopViewport = Number((scrollTop + fromTopElementToTopViewport).toFixed());
-            if (scrollTop >
-                scrollTopAndFromTopElmentTotopViewport - clientHeight * 0.9) {
-                p.style.opacity = "1";
-            }
-        }
-    });
-});
+// window.addEventListener('scroll', () => {
+//   const { scrollTop, clientHeight } = document.documentElement;
+//   let fromTopElementToTopViewport : number;
+//     paratest?.forEach(p => {
+//       fromTopElementToTopViewport = p.getBoundingClientRect().top
+//       if (fromTopElementToTopViewport) {
+//         const scrollTopAndFromTopElmentTotopViewport: number = Number(
+//           (scrollTop + fromTopElementToTopViewport).toFixed()
+//         );
+//         if (
+//           scrollTop >
+//           scrollTopAndFromTopElmentTotopViewport - clientHeight * 0.9
+//         ) {
+//           (p as HTMLElement).style.opacity = "1";
+//         }
+//       }
+//     })
+// })
 window.addEventListener("scroll", function () {
     var _a = document.documentElement, scrollTop = _a.scrollTop, clientHeight = _a.clientHeight;
     var fromTopElementToTopViewport = SlidingNewsLetter === null || SlidingNewsLetter === void 0 ? void 0 : SlidingNewsLetter.getBoundingClientRect().top;
