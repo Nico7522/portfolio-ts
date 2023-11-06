@@ -1,7 +1,4 @@
 "use strict";
-// import * as AOS from 'aos';
-// import 'aos/dist/aos.css'; 
-// AOS.init();
 var menuHamburger = document.querySelector(".menu-h");
 var navLinks = document.querySelector(".nav-links");
 var SlidingNewsLetter = document.querySelector('.slide-in');

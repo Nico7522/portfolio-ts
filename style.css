@@ -170,6 +170,9 @@ h2 {
 .history {
     max-width: 900px;
     margin: auto;
+
+
+
 }
 
 .history > h3 {
@@ -188,6 +191,18 @@ h2 {
     
 }
 
+#js {
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(247, 211, 51);
+}
+
+#dotnet {
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(151, 40, 179);
+}
+
 .content h1 {
     font-family: Raleway, sans-serif;
     font-size: 60px;
@@ -201,8 +216,51 @@ h2 {
     color: #f1f1f1;
 }
 
+.project {
+    margin-top: 10px;
+    border-top: #f7b733 1px solid;
+    width: 100%;
+}
+
+#project {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-top: 10px;
+    margin: auto;
+    border-top: #f7b733 1px solid;
+
+}
+
+.gon-project {
+    display: flex;
+
+}
+.gon-project > p {
+    text-align: center;
+}
+#img-project {
+    width: 550px;
+    transition: ease width 0.5s;
+}
+
+#img-project:hover {
+    width: 570px;
+    
+}
+#project-desc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+#project-desc > p {
+    font-family: "Poppins";
+
+}
 .slide-in {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 50px auto;
     height: 250px;
     background: linear-gradient(to right, rgb(175, 53, 19), #f7b733); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

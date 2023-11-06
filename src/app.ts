@@ -1,6 +1,5 @@
-// import * as AOS from 'aos';
-// import 'aos/dist/aos.css'; 
-// AOS.init();
+
+
 
 const menuHamburger = document.querySelector(".menu-h");
 const navLinks = document.querySelector(".nav-links");
@@ -8,6 +7,7 @@ const SlidingNewsLetter = document.querySelector('.slide-in');
 const linkedinLogo = document.querySelector('.linkedin-logo');
 const githubLogo = document.querySelector('.github-logo');
 const paratest = document.querySelectorAll('.div-test > p');
+
 
 
 // Méthode pour afficher le texte au scroll
