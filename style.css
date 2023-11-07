@@ -149,23 +149,50 @@ h2 {
     align-items: center;
 }
 
-.github-logo {
-    width: 60px;
-    transition: ease width 0.5s;
+#github-logo {
+    background: url("./images/github.png");
+   
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: ease width 0.5s, height ease 0.5s;
+
 
 }
-.github-logo:hover {
-    width: 80px;
+#github-logo > a, .linkedin-logo > a, #img-project > a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    
+}
+#github-logo:hover {
+    width: 60px;
+    height: 60px;
 }
 
 .linkedin-logo {
-    width: 77px;
-    transition: ease width 0.5s;
+    background: url("./images/linkedin.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    width: 77px;  
+    height: 77px;
+    cursor: pointer;
+    position: relative;
+    transition: ease width 0.5s, height ease 0.5s;
 
 }
 .linkedin-logo:hover {
     width: 90px;
+    height: 90px;
 }
+
+
 
 .history {
     max-width: 900px;
@@ -239,13 +266,31 @@ h2 {
 .gon-project > p {
     text-align: center;
 }
-#img-project {
-    width: 550px;
-    transition: ease width 0.5s;
+.gon-img {
+
+    background: url("./images/gon.jpg");
 }
 
+.dokkaninvoc-img {
+    background: url("./images/invocationsimulator.jpg");
+
+}
+#img-project {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 500px;
+
+    height: 250px;
+    cursor: pointer;
+    position: relative;
+    transition: ease width 0.5s, height ease 0.5s;
+}
+
+
 #img-project:hover {
-    width: 570px;
+    width: 550px;
+    height: 270px;
+    
     
 }
 #project-desc {
@@ -254,6 +299,9 @@ h2 {
     text-align: center;
     justify-content: center;
     
+}
+#project-desc > div {
+    margin: 0 auto;
 }
 #project-desc > p {
     font-family: "Poppins";
