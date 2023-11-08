@@ -14,13 +14,19 @@
 
 html {
     scroll-behavior: smooth;
-    background-image: url("./images/background.jpg");
-    background-size: contain; 
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+  
+
 }
 
 
 body {
-    
+    background: url("./images//testbg.jpg") fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -110,6 +116,7 @@ h2 {
     font-family: "Poppins";
     font-size: 2.5rem;
     text-align: center;
+
 }
 
 .description {
@@ -178,7 +185,7 @@ h2 {
 
 .linkedin-logo {
     background: url("./images/linkedin.png");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 77px;  
     height: 77px;
@@ -247,20 +254,53 @@ h2 {
     margin-top: 10px;
     border-top: #f7b733 1px solid;
     width: 100%;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.project > h2 {
+    border-bottom: #f7b733 1px solid;
+    width: 600px;
+    max-width: 1200px;
+
+    margin: auto;
+
 }
 
 #project {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    margin-top: 10px;
     margin: auto;
-    border-top: #f7b733 1px solid;
+    padding: 50px;
+    border-bottom: #f7b733 1px solid;
 
+}
+
+#back-front {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    
+}
+.back-front {
+    margin-bottom: 40px !important;
+}
+#back-front > #github-logo {
+    position: relative;
+    
+}
+#back-front > div > p {
+    position: absolute;
+    width: 200px;
+    bottom: -60%;
+    left: -150%;
 }
 
 .gon-project {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .gon-project > p {
@@ -274,6 +314,26 @@ h2 {
 .dokkaninvoc-img {
     background: url("./images/invocationsimulator.jpg");
 
+}
+
+.appmeteo-img {
+    background: url("./images/appmeteo.png");
+}
+.recette-img {
+    background: url("./images/cuisine.jpg");
+}
+.op-img {
+    background: url("./images/op.png");
+}
+.dokkanthread-img {
+    background: url("./images/dokkanthread.png");
+}
+.deadrock-img {
+    background: url("./images//deadrock.png");
+}
+
+.pizzasite-img {
+    background: url("./images/pizza.png");
 }
 #img-project {
     background-repeat: no-repeat;
@@ -298,7 +358,25 @@ h2 {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    margin-right: 10px;
     
+}
+#language-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+#language-logo > img {
+    margin: 5px;
+}
+
+
+#project-desc > img, #language-logo > img  {
+    width: 50px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
 }
 #project-desc > div {
     margin: 0 auto;
@@ -306,6 +384,11 @@ h2 {
 #project-desc > p {
     font-family: "Poppins";
 
+}
+
+.apiop-link {
+    background-color: #240e0e;
+    padding: 0px 5px;
 }
 .slide-in {
     max-width: 1200px;
