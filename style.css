@@ -88,6 +88,43 @@ h2 {
     font-size: 5rem;
 }
 
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-left: #f7b733 1px solid; 
+    width: 50%;
+    margin: 0 auto;
+
+}
+.softskills-skills {
+    display: flex;
+    justify-content: center; /* Centrer le contenu horizontalement */
+    width: 100%; /* Ajuster la largeur selon vos préférences */
+    margin: 0 auto;
+    border-bottom: #f7b733 1px solid; 
+
+
+}
+
+.softskills,
+.skills {
+    width: 50%; /* La largeur de chaque liste */
+
+}
+.skills {
+    border-left: #f7b733 1px solid; 
+
+}
+
+.softskills > ul,
+.skills > ul {
+    padding: 0; /* pour enlever le padding par défaut des listes */
+    text-align: center;
+}
+
 .about-me {
     /* max-width: 1500px; */
     margin: 0 auto;
@@ -98,9 +135,10 @@ h2 {
 }
 .total-description {
     display: flex;
-    justify-content: space-between;    
     width: 100%;
-    max-width: 1500px;
+    margin: 0 auto;
+    margin: auto;
+    border-top: #f7b733 1px solid; 
 
 }
 
@@ -121,15 +159,17 @@ h2 {
 
 .description {
     text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
+    width: 50%;
+    margin-top: 10px;
 }
 
 .resume {
-    margin-top: 50px;
     width: 500px;
-    height: 350px;
+    text-align: center;
+    margin: 50px auto;
 }
+
+
 
 .resume > p {
     
@@ -146,6 +186,13 @@ h2 {
 .js-logo {
     width: 200px;
     margin-right: 10px;
+
+}
+.profile-picture {
+    width: 200px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
 
 }
 
