@@ -97,6 +97,7 @@ h2 {
     border-left: #f7b733 1px solid; 
     width: 50%;
     margin: 0 auto;
+    font-family: "Poppins";
 
 }
 .softskills-skills {
@@ -119,12 +120,46 @@ h2 {
 
 }
 
+.softskills > h3,
+.skills > h3 {
+   
+    font-size: 3em;
+
+}
+
 .softskills > ul,
 .skills > ul {
     padding: 0; /* pour enlever le padding par défaut des listes */
     text-align: center;
+    font-size: 1.2em;
+
 }
 
+.etude-experience {
+    display: flex;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.etude, .experience {
+    width: 50%; /* La largeur de chaque liste */
+
+}
+
+.experience > h3, .etude > h3 {
+
+    font-size: 3em;
+}
+
+.experience > ul, .etude > ul {
+    padding: 0; /* pour enlever le padding par défaut des listes */
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.experience {
+    border-left: #f7b733 1px solid;
+}
 .about-me {
     /* max-width: 1500px; */
     margin: 0 auto;
