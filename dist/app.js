@@ -38,9 +38,9 @@ window.addEventListener("scroll", function () {
 menuHamburger === null || menuHamburger === void 0 ? void 0 : menuHamburger.addEventListener('click', function () {
     navLinks === null || navLinks === void 0 ? void 0 : navLinks.classList.toggle('mobile-menu');
 });
-linkedinLogo === null || linkedinLogo === void 0 ? void 0 : linkedinLogo.addEventListener("mouseover", function () {
-    githubLogo.style.width = "50px";
-});
-linkedinLogo === null || linkedinLogo === void 0 ? void 0 : linkedinLogo.addEventListener("mouseleave", function () {
-    githubLogo.style.width = "";
-});
+// linkedinLogo?.addEventListener("mouseover", () => {
+//   (githubLogo as HTMLElement).style.width = "50px";
+// });
+// linkedinLogo?.addEventListener("mouseleave", () => {
+//   (githubLogo as HTMLElement).style.width = "";
+// });

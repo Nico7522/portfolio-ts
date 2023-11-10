@@ -94,7 +94,15 @@ h2 {
 
 }
 
-
+.image-title {
+    margin: 15px auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-title > h3 {
+    font-size: 4rem;
+}
 .cv {
     display: flex;
     flex-direction: column;
@@ -135,11 +143,37 @@ h2 {
 
 .softskills > ul,
 .skills > ul {
-    padding: 0; /* pour enlever le padding par défaut des listes */
+    padding: 0; 
     text-align: center;
     font-size: 1.2em;
 
 }
+dl {
+    width: 100%;
+
+
+}
+dt {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1.2em;
+  font-weight: 700;
+  background: linear-gradient(45deg, #f7b733, rgb(241, 239, 115));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+dd {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+
+}
+
 
 .etude-experience {
     display: flex;
@@ -150,7 +184,7 @@ h2 {
 
 .etude, .experience {
     width: 50%; /* La largeur de chaque liste */
-
+    padding-top: 10px;
 }
 
 .experience > h3, .etude > h3 {
@@ -179,18 +213,21 @@ h2 {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    margin: auto;
     border-top: #f7b733 1px solid; 
 
 }
 
 .title {
-    width: 200px;
-    margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin: 15px auto 15px auto;
+
 }
+.title > h3 {
+    font-size: 4rem;
+}
+
 
  h3 {
     font-family: "Poppins";
@@ -202,7 +239,7 @@ h2 {
 .description {
     text-align: center;
     width: 50%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .resume {
@@ -226,23 +263,21 @@ h2 {
 }
 
 .js-logo {
-    width: 200px;
+    width: 100px;
     margin-right: 10px;
 
 }
 .profile-picture {
-    width: 200px;
-    display: block;
-    text-align: center;
-    border-radius: 50%;
-
+    width: 250px;
+    clip-path: circle(48.9% at 50% 50%);
 }
-
 .utils-link {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box; /* Ajout de la propriété box-sizing */
+    max-height: 70px;
+
 }
 
 #github-logo {
@@ -250,11 +285,11 @@ h2 {
    
     background-repeat:no-repeat;
     background-size: 100% 100%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     position: relative;
-    transition: ease width 0.5s, height ease 0.5s;
+    transition: transform 0.3s ease; /* Ajoute une transition pour une animation fluide */
 
 
 }
@@ -268,24 +303,31 @@ h2 {
     
 }
 #github-logo:hover {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    transform: scale(1.2); 
+
 }
 
 .linkedin-logo {
+
     background: url("./images/linkedin.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 77px;  
-    height: 77px;
+    width: 70px;  
+    height: 70px;
     cursor: pointer;
     position: relative;
-    transition: ease width 0.5s, height ease 0.5s;
+    transition: transform 0.3s ease; 
+    overflow: hidden;
+
 
 }
 .linkedin-logo:hover {
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
+    transform: scale(1.2); 
+
 }
 
 

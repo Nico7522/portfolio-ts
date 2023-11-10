@@ -54,10 +54,11 @@ menuHamburger?.addEventListener('click', () => {
 });
 
 
-linkedinLogo?.addEventListener("mouseover", () => {
-  (githubLogo as HTMLElement).style.width = "50px";
-});
+// linkedinLogo?.addEventListener("mouseover", () => {
+//   (githubLogo as HTMLElement).style.width = "50px";
+// });
 
-linkedinLogo?.addEventListener("mouseleave", () => {
-  (githubLogo as HTMLElement).style.width = "";
-});
+// linkedinLogo?.addEventListener("mouseleave", () => {
+//   (githubLogo as HTMLElement).style.width = "";
+// });
+
