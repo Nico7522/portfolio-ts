@@ -88,6 +88,12 @@ h2 {
     font-size: 5rem;
 }
 
+.presentation {
+    border-top: #f7b733 1px solid; 
+    border-bottom: #f7b733 1px solid; 
+
+}
+
 
 .cv {
     display: flex;
@@ -104,6 +110,7 @@ h2 {
     justify-content: center; /* Centrer le contenu horizontalement */
     width: 100%; /* Ajuster la largeur selon vos préférences */
     margin: 0 auto;
+    border-top:#f7b733 1px solid;
     border-bottom: #f7b733 1px solid; 
 
 
