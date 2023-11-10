@@ -1,15 +1,10 @@
-
-
-
 const menuHamburger = document.querySelector(".menu-h");
 const navLinks = document.querySelector(".nav-links");
 const SlidingNewsLetter = document.querySelector('.slide-in');
 const linkedinLogo = document.querySelector('.linkedin-logo');
 const githubLogo = document.querySelector('.github-logo');
 const paratest = document.querySelectorAll('.div-test > p');
-
-
-
+import { projectsList } from "../dist/utils/projects.js"
 // Méthode pour afficher le texte au scroll
 // window.addEventListener('scroll', () => {
 //   const { scrollTop, clientHeight } = document.documentElement;
@@ -30,6 +25,12 @@ const paratest = document.querySelectorAll('.div-test > p');
 //     })
 
 // })
+
+console.log("ccd");
+projectsList.map((p) => {
+  console.log(p.description);
+  
+})
 
 window.addEventListener("scroll", () => {
   const { scrollTop, clientHeight } = document.documentElement;
