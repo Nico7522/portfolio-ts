@@ -1,3 +1,8 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const menuHamburger = document.querySelector(".menu-h");
 const navLinks = document.querySelector(".nav-links");
 const SlidingNewsLetter = document.querySelector('.slide-in');
@@ -26,11 +31,7 @@ import { projectsList } from "../dist/utils/projects.js"
 
 // })
 
-console.log("ccd");
-projectsList.map((p) => {
-  console.log(p.description);
-  
-})
+
 
 window.addEventListener("scroll", () => {
   const { scrollTop, clientHeight } = document.documentElement;

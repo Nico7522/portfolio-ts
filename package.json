@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/aos": "^3.0.6",
+    "parcel": "^2.10.3",
     "typescript": "^5.2.2"
   },
   "dependencies": {
