@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +20,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "parcel-plugin-asset-fourohfour": "^0.1.13"
   }
 }

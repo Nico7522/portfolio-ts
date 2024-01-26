@@ -623,37 +623,7 @@ menuHamburger?.addEventListener("click", ()=>{
  //   (githubLogo as HTMLElement).style.width = "";
  // });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","aos":"eRzTM","aos/dist/aos.css":"iYkXi"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"eRzTM":[function(require,module,exports) {
+},{"aos":"eRzTM","aos/dist/aos.css":"iYkXi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eRzTM":[function(require,module,exports) {
 !function(e, t) {
     module.exports = t();
 }(this, function() {
@@ -1095,6 +1065,36 @@ exports.export = function(dest, destName, get) {
     ]);
 });
 
-},{}],"iYkXi":[function() {},{}]},["gmymv","kuM8f"], "kuM8f", "parcelRequireb98d")
+},{}],"iYkXi":[function() {},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["gmymv","kuM8f"], "kuM8f", "parcelRequireb98d")
 
 //# sourceMappingURL=app.js.map

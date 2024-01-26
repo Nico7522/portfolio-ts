@@ -44,6 +44,8 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 100%;
+
     height: 100%;
     /* height: 110px; */
     box-sizing: border-box;
@@ -101,7 +103,7 @@ h2 {
     justify-content: center;
 }
 .image-title > h3 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .cv {
     display: flex;
@@ -353,6 +355,7 @@ dd {
 
 .content {
     width: 100%;
+    max-width: 100%;
     
 }
 
@@ -598,11 +601,15 @@ dd {
 @media screen and (max-width: 900px) {
     .navbar {
         padding: 0;
+        width: 100%;
+        max-width: 100%;
+
     }
+
 
     .navbar .logo {
         position: absolute;
-        top: 50px;
+        top: 20px;
         left: 50px;
     }
     .nav-links {
@@ -635,13 +642,90 @@ dd {
 
     .navbar .menu-h {
         display: block;
+        top: 20px
     }
 
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2em;
     }
+
+    .presentation > h2 {
+        font-size: 2rem;
+    }
+    .resume {
+        width: 100%;
+    }
+
+  
+
+    img {
+        max-width: 100%;
+
+    }
+
+    .project {
+        max-width: 70%;
+    }
+    .project > h2 {
+        text-align: center;
+    }
+
+    #project > div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .dokkanthread-img {
+        width: 100% ;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .description {
+        text-align: center;
+        width: 100%;
+        /* margin-top: 10px; */
+    }
 }
 
+@media screen and (max-width: 1020px) {
+    .total-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        border-top: #f7b733 1px solid; 
+    
+    }
+
+    .cv {
+        border: 1px solid #f7b733;
+    }
+
+    .image-title {
+        margin: 15px auto 15px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .softskills > h3,
+.skills > h3 {
+   
+    font-size: 2em;
+
+}
+
+.experience > h3, .etude > h3 {
+
+    font-size: 2em;
+}
+}
 
 
