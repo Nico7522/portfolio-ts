@@ -5,7 +5,7 @@
 62K:\DEV\Portefolio-TS\node_modules\htmlnano\lib\presets\max.cjs133459905961943411 0
 31K:\DEV\Portefolio-TS\src\app.ts133459907152931794 0
 70K:\DEV\Portefolio-TS\node_modules\cosmiconfig\dist\ExplorerBase.js.map133459905959852952 0
-30K:\DEV\Portefolio-TS\style.css133508180150023576 0
+30K:\DEV\Portefolio-TS\style.css133508187356768526 0
 88K:\DEV\Portefolio-TS\node_modules\lmdb\node_modules\node-addon-api\napi-inl.deprecated.h133459905990149686 0
 69K:\DEV\Portefolio-TS\node_modules\css-tree\cjs\syntax\scope\value.cjs133459905968460649 0
 50K:\DEV\Portefolio-TS\node_modules\type-fest\source133459905962643588 1
@@ -29,7 +29,7 @@
 104K:\DEV\Portefolio-TS\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\scope\value.js133459905968450644 0
 82K:\DEV\Portefolio-TS\node_modules\caniuse-lite\data\features\css-grid-animation.js133459905969570900 0
 73K:\DEV\Portefolio-TS\node_modules\svgo\plugins\convertOneStopGradients.js133459905963083671 0
-25K:\DEV\Portefolio-TS\dist133508180150214084 1
+25K:\DEV\Portefolio-TS\dist133508187356968564 1
 107K:\DEV\Portefolio-TS\node_modules\@parcel\transformer-react-refresh-wrap\lib\ReactRefreshWrapTransformer.js133459905971361306 0
 91K:\DEV\Portefolio-TS\node_modules\csso\node_modules\css-tree\cjs\syntax\atrule\supports.cjs133459905990539775 0
 74K:\DEV\Portefolio-TS\node_modules\type-fest\source\fixed-length-array.d.ts133459905960293041 0
@@ -4498,7 +4498,7 @@
 65K:\DEV\Portefolio-TS\node_modules\.bin\update-browserslist-db.cmd133459906042228745 0
 70K:\DEV\Portefolio-TS\node_modules\caniuse-lite\data\features\webgpu.js133459905977222622 0
 70K:\DEV\Portefolio-TS\node_modules\caniuse-lite\data\features\webhid.js133459905977222622 0
-48K:\DEV\Portefolio-TS\dist\index.3a01df49.css.map133508180150214084 0
+48K:\DEV\Portefolio-TS\dist\index.3a01df49.css.map133508187356968564 0
 68K:\DEV\Portefolio-TS\node_modules\caniuse-lite\data\features\webp.js133459905977272633 0
 74K:\DEV\Portefolio-TS\node_modules\caniuse-lite\data\features\websockets.js133459905977282632 0
 76K:\DEV\Portefolio-TS\node_modules\caniuse-lite\data\features\webtransport.js133459905977282632 0
@@ -6138,7 +6138,7 @@
 47K:\DEV\Portefolio-TS\dist\appmeteo.ae8785fc.png133508174596021872 0
 47K:\DEV\Portefolio-TS\dist\deadrock.b71914bc.png133508174595471746 0
 42K:\DEV\Portefolio-TS\dist\gon.e588db3f.jpg133508174596171907 0
-44K:\DEV\Portefolio-TS\dist\index.3a01df49.css133508180150194082 0
+44K:\DEV\Portefolio-TS\dist\index.3a01df49.css133508187356948573 0
 47K:\DEV\Portefolio-TS\dist\index.5670a418.js.map133508174596221925 0
 36K:\DEV\Portefolio-TS\dist\index.html133508174597702251 0
 47K:\DEV\Portefolio-TS\dist\linkedin.1652fa3c.png133508174595451747 0

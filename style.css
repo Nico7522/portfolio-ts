@@ -650,6 +650,11 @@ dd {
         font-size: 1.2em;
     }
 
+    .content {
+        max-width: 100%;
+        margin: 0 auto
+    }
+
     .total-description {
         display: flex;
         flex-direction: column;
@@ -657,14 +662,14 @@ dd {
         justify-content: center;
         width: 100%;
         margin: 0 auto;
-        border-top: #f7b733 1px solid; 
-        border-left: 1px #f7b733 solid;
+        border: none;
     
     }
 
     .cv {
-        border: 1px solid #f7b733;
         width: 100%;
+        border: none;
+        border-top: 1px solid #f7b733 ;
     }
 
     .softskills > h3,
@@ -731,6 +736,7 @@ dd {
     .description {
         text-align: center;
         width: 100%;
+   
         /* margin-top: 10px; */
     }
 
