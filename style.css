@@ -414,7 +414,7 @@ dd {
 
 #back-front {
     display: flex;
-    width: 500px;
+    width: 200px;
     justify-content: space-around;
     
 }
@@ -422,14 +422,19 @@ dd {
     margin-bottom: 40px !important;
 }
 #back-front > #github-logo {
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 #back-front > div > p {
-    position: absolute;
+    /* position: absolute; */
     width: 200px;
-    bottom: -60%;
-    left: -150%;
+    margin-top: 77px;
+    /* bottom: -60%; */
+    /* left: -150%; */
 }
 
 .gon-project {
@@ -614,6 +619,10 @@ dd {
         font-size: 2rem;
     }
 
+    /* #project-desc {
+        width: 300px;
+    } */
+
   }
 
 @media screen and (max-width: 900px) {
@@ -774,7 +783,7 @@ dd {
     }
 
     #back-front {
-        width: 150px;
+        width: 250px;
     }
 
     #project-desc > p {
@@ -792,6 +801,25 @@ dd {
         font-size: 2.5rem;
         width: 100%;
     }
+
+    #project-desc > div {
+        margin-bottom: 5px;
+    }
+
+    .double-logo {
+        margin-bottom: 30px;
+    }
+
+    #back-front > #github-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* #back-front > div > p {
+        width: 0px
+    } */
 }
 
 
